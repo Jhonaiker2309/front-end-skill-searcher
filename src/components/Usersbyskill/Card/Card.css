@@ -1,0 +1,57 @@
+.card-image{
+  width: 100px;
+  border-radius: 100%;
+  display: inline-block;
+
+}
+
+.image-and-name{
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+}
+
+.card-link {
+  color: green;
+  font-weight: bold;
+}
+
+.card-text{
+  display: flex;
+  align-items: center;
+}
+
+.card{
+  background-color: #334756;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.headline{
+  color: white;
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+.skill-button{
+  margin: 1px;
+  padding: 6px;
+  border-radius: 10px;
+  background-color: #1A374D;
+}
+.my-link :hover{
+  background-color: #334756;
+}
+
+.skill-text{
+  color: white;
+  font-weight: bold;
+}
+
+.skill-button :hover{
+  background-color: #334756;
+}
+
+.skill-link :hover{
+  background: #334756;
+  cursor: pointer
+}

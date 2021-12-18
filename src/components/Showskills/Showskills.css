@@ -1,0 +1,25 @@
+.level{
+  color: #D0D0D0	
+}
+
+.skill-button{
+  margin: 1px;
+  padding: 6px;
+  border-radius: 10px;
+  background-color: #1A374D;
+}
+
+.skill-text{
+  color: white;
+  font-weight: bold;
+}
+
+.skill-button :hover{
+  background-color: #1A374D;
+}
+
+.skill-link :hover{
+  background: #1A374D;
+  cursor: pointer
+}
+

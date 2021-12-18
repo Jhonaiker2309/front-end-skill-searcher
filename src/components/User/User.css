@@ -1,0 +1,38 @@
+.user{
+  background-color: #30475E;
+  width: 100%;
+  min-height: 90.72vh;
+  display: flex;
+  flex-direction: column;
+  padding:10px
+}
+
+.user-left{
+  font-size: 30px;
+  color: white;
+  justify-self: center;
+  align-self: center;
+}
+
+.skills {
+  font-size: 30px;
+  color: white;
+}
+
+.user-right{
+  padding-top: 12px
+}
+
+.image{
+  border-radius: 100%;
+  justify-content: center
+}
+
+.name{
+  text-align: center
+}
+
+.list-of-skills{
+  padding-bottom: 5px;
+  border-bottom: 3px solid white;
+}

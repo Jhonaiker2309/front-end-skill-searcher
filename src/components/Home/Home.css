@@ -1,0 +1,30 @@
+.home{
+  background-color: #30475E;
+  height: 90.72vh;
+  display: grid;
+  grid-template-columns: 1;
+
+}
+
+.welcome{
+  color: white;
+  font-size: 35px;
+  justify-self: center;
+}
+
+.indication{
+  color: #C8C6C6;
+  font-size: 20px;
+  justify-self: center;  
+}
+
+.torre-invitation{
+  color: green
+}
+
+.image-torre{
+ width: 80%;
+ height: 400px;
+ border-radius: 10px;
+ justify-self: center;
+}
