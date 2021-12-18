@@ -55,8 +55,6 @@ export default function Usersbyskill() {
 						});
 				}, [skill]);
 
-    console.log(users)
-
     return (
 			<div className="users-by-skill">
 				{users.map(user => {

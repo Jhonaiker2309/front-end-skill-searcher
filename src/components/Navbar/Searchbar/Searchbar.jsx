@@ -27,8 +27,6 @@ function SearchBar({ placeholder, data }) {
     setWordEntered("");
   };
 
-  console.log(data)
-
   return (
     <div className="search">
       <div className="searchInputs">
@@ -50,7 +48,7 @@ function SearchBar({ placeholder, data }) {
                {filteredData.length !== 0 && (
         <div className="dataResult">
           {filteredData.map((value, i) => {
-            console.log(value)
+            
             return (
               <Link className="dataItem" to={`/user/${value.username}`} key={i}>
                 <p>{value.name} </p>
