@@ -57,11 +57,19 @@ export default function Usersbyskill() {
 
     return (
 			<div className="users-by-skill">
-				{users.map(user => {
+				{users.map((user,i ) => {
                   const {name, username, headline, picture, skills} = user
                   return (
-                    <Card name={name} username={username} headline={headline} picture={picture} skills={skills}/>
-                  )
+										<div key={i}>
+											<Card
+												name={name}
+												username={username}
+												headline={headline}
+												picture={picture}
+												skills={skills}
+											/>
+										</div>
+									);
                 })}
 			</div>
 		);
