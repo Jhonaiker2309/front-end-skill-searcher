@@ -6,15 +6,13 @@ import {Link} from "react-router-dom"
 
 export default function Navbar() {
     const [allUsernames, setAllUsernames] = useState([])
-  const [usernames, setUsernames] = useState([])
 
       useEffect(()=> {
-    fetch("http://localhost:5000/users").then(res => res.json()).then(data => {
+    fetch(`${process.env.REACT_APP_BACK_END}/users`).then(res => res.json()).then(data => {
       
       const names = []
       data.data.forEach(datum => names.push({name: datum.name, username: datum.username}))
       setAllUsernames(names)
-      setUsernames(names)
     })
   }, [])
 

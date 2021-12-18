@@ -15,7 +15,11 @@ export default function Card({username, name, headline, skills, picture}) {
 				</div>
 				<div className="headline">{headline}</div>
 				{skills.splice(0, 5).map((skill) => (
-					<button className="skill-button"><Link to={`/skill/${skill.name}`}><span className="skill-text">{skill.name}</span></Link></button>
+					<button className="skill-button">
+						<Link to={`/skill/${skill.name}`}>
+							<span className="skill-text">{skill.name}</span>
+						</Link>
+					</button>
 				))}
 			</div>
 		);

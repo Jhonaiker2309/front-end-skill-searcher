@@ -14,7 +14,7 @@ export default function User() {
 
      useEffect( () => {
     
-      fetch(`http://localhost:5000/user/${username}`).then(res => res.json()).then(data => {
+      fetch(`${process.env.REACT_APP_BACK_END}/user/${username}`).then(res => res.json()).then(data => {
       setUser(data.data)
       
       let masterArray = []
@@ -41,7 +41,7 @@ export default function User() {
 
           useEffect( () => {
     
-      fetch(`http://localhost:5000/user/${username}`).then(res => res.json()).then(data => {
+      fetch(`${process.env.REACT_APP_BACK_END}/user/${username}`).then(res => res.json()).then(data => {
       setUser(data.data)
       
       let masterArray = []

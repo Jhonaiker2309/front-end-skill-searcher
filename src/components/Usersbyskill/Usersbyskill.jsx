@@ -9,7 +9,7 @@ export default function Usersbyskill() {
     const {skill} = useParams()
 
     useEffect(()=> {
-      fetch("http://localhost:5000/users").then(res => res.json()).then(data => {
+      fetch(`${process.env.REACT_APP_BACK_END}/users`).then(res => res.json()).then(data => {
       let myList = []
 
       data.data.forEach(user => {
@@ -29,7 +29,7 @@ export default function Usersbyskill() {
     }, [])
 
         useEffect(() => {
-					fetch("http://localhost:5000/users")
+					fetch(`${process.env.REACT_APP_BACK_END}/users`)
 						.then((res) => res.json())
 						.then((data) => {
 							let myList = [];
